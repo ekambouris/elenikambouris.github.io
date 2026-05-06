@@ -74,6 +74,37 @@
   color: #2E2C2F;
 }
 
+/* Photo Grids*/
+div.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+}
+
+div.gallery-item {
+  margin: 5px;
+  border: 1px solid #ccc;
+  width: 600px;
+  overflow: hidden;
+    border-radius: 8px;
+}
+
+div.gallery-item:hover {
+  border: 1px solid #777;
+    border-radius: 8px;
+}
+
+div.gallery-item img {
+  width: 100%;
+  height: auto;
+}
+
+div.gallery-item div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
 /* Website Body*/
 
 body {
@@ -99,6 +130,7 @@ p {
   font-size: 25px;
   margin: 0 40px 0 40px;
   max-width: 1600px;
+  align-content: center;
 }
 
 
