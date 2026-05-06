@@ -84,14 +84,8 @@ div.gallery {
 
 div.gallery-item {
   margin: 5px;
-  border: 1px solid #ccc;
   width: 600px;
   overflow: hidden;
-    border-radius: 8px;
-}
-
-div.gallery-item:hover {
-  border: 1px solid #777;
     border-radius: 8px;
 }
 
@@ -128,9 +122,9 @@ h4 {
 
 p {
   font-size: 25px;
-  margin: 0 40px 0 40px;
+  margin: 0 auto;
   max-width: 1600px;
-  align-content: center;
+
 }
 
 
