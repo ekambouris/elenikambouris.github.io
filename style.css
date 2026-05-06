@@ -1,0 +1,154 @@
+/* Grid for Projects */
+.projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  padding: 20px;
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.project-card div {
+  padding: 10px;
+  font-size: 30px;
+  text-align: center;
+}
+
+/* Individual Card Styling */
+.project-card {
+  background-color: #386641;
+  border: 1px solid #25442c;
+  border-radius: 8px;
+  overflow: hidden; /* Clips the image to the border radius */
+  text-decoration: none; /* Removes underline from links */
+  color: #F2E8CF;
+  transition: transform 0.2s ease; /* Adds a little "pop" on hover */
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.project-card:hover {
+  transform: translateY(-5px); /* Lifts the card up when hovered */
+  box-shadow: 0 8px 15px rgba(0,0,0,0.2);
+}
+
+.project-info {
+  padding: 15px;
+}
+
+.project-info h3 {
+  margin: 0 0 10px 0;
+  color: #F2E8CF;
+}
+
+/* Grid For Role Info */
+
+.roles {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  padding: 20px;
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+  border: 2px solid black;
+  border-radius: 8px;
+}
+
+.role-card div {
+  padding: 5px;
+  font-size: 30px;
+  text-align: center;
+}
+
+.role-card{
+  text-decoration: none;
+  align-content: center;
+}
+
+.role-info {
+  padding: 10px;
+  text-justify:center;
+}
+
+.role-info h3 {
+  margin: 0 0 10px 0;
+  color: #2E2C2F;
+}
+
+/* Website Body*/
+
+body {
+  margin: 10px 0 0 0;
+  padding: 0;
+  padding-top: 30px;
+  background-color: #F2E8CF;
+  color: #386641;
+}
+
+h1 {
+  font-size: 50px;
+  text-decoration: underline;
+  text-align: center;
+}
+
+h4 {
+  text-align: center;
+  font-size: 35px;
+}
+
+p {
+  font-size: 25px;
+  margin: 0 40px 0 40px;
+}
+
+
+h2 {
+  text-align: center;
+  color: #F3E8EE;
+}
+
+/* Nav Bar */
+
+ul {
+  list-style-type: none;
+  background-color: #eae0c8;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  font-size: 20px;
+}
+
+ul li {
+  float: left;
+}
+
+ul li a {
+  display: block;
+  color: #A7C957;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+ul li a:hover:not(.active) {
+  background-color: #6A994E;
+  border-radius: 8px;
+
+}
+
+ul li a.active {
+  color: #6A994E;
+  border-bottom: 2px solid #6A994E;
+  padding-bottom: 4px;
+}
+
+
+
+
+
+
+
+
+
