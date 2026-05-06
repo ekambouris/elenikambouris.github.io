@@ -76,22 +76,28 @@
 
 /* Photo Grids*/
 div.gallery {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  padding: 20px;
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
   justify-content: center;
 
 }
 
 div.gallery-item {
   margin: 5px;
-  width: 600px;
+  width: auto-fit;
   overflow: hidden;
-    border-radius: 8px;
 }
 
 div.gallery-item img {
   width: 100%;
-  height: auto;
+  height: 375px;
+  object-fit:cover;
+
+  border-radius: 8px;
 }
 
 div.gallery-item div.desc {
@@ -113,11 +119,15 @@ h1 {
   font-size: 50px;
   text-decoration: underline;
   text-align: center;
+  padding: 5px;
 }
 
 h4 {
   text-align: center;
   font-size: 35px;
+  margin: 5px;
+  padding: 5px;
+
 }
 
 p {
