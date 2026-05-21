@@ -165,15 +165,14 @@ ul li {
 
 ul li a {
   display: block;
-  color: #A7C957;
+  color: #6A994E;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
 }
 
 ul li a:hover:not(.active) {
-  background-color: #6A994E;
-  border-radius: 8px;
+  color: #337CA0;
 
 }
 
