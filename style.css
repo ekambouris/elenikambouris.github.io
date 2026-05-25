@@ -6,6 +6,7 @@
   gap: 30px;
   max-width: 1200px;
   margin: 0 auto;
+  border-radius: 8px;
 }
 
 .project-card div {
@@ -39,6 +40,7 @@
   margin: 0 0 10px 0;
   color: #F2E8CF;
 }
+
 
 /* Grid For Role Info */
 
@@ -105,13 +107,139 @@ div.gallery-item div.desc {
   text-align: center;
 }
 
+div.gallery-item-about {
+  margin: 5px;
+
+}
+
+div.gallery-item-about img {
+  width: 100%;
+  height: 375px;
+  object-fit:cover;
+
+  border-radius: 8px;
+}
+
+div.gallery-item-about div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+/* flipping the cards?
+/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.flip-card {
+  background-color: transparent;
+  width: 375px;
+  height: 250px;
+  border-radius: 8px;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+  border-radius: 8px;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+  background-color: #386641;
+  border: 1px solid #25442c;
+  border-radius: 8px;
+  overflow: hidden; /* Clips the image to the border radius */
+  text-decoration: none; /* Removes underline from links */
+  color: #F2E8CF;
+}
+
+/* Style the back side */
+.flip-card-back {
+  background-color: #386641;
+  border: 1px solid #25442c;
+  border-radius: 8px;
+  overflow: hidden; /* Clips the image to the border radius */
+  text-decoration: none; /* Removes underline from links */
+  color: #F2E8CF;
+  transform: rotateY(180deg);
+
+}
+
+.flip-card-back h3 {
+  font-size: 35px; /* Replace with your desired size */
+  margin-top: 20px; /* Optional: adjust spacing since browser defaults might mess with it */
+}
+
+.flip-card-back a {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  padding: 20px;          /* Gives text some breathing room from edges */
+  box-sizing: border-box; /* Prevents padding from breaking the 100% height */
+  text-decoration: none;
+  color: #F2E8CF;
+}
+
+.flip-card-front h3 {
+  font-size: 35px; /* Replace with your desired size */
+  margin-top: 20px; /* Optional: adjust spacing since browser defaults might mess with it */
+}
+
+.flip-card-front a {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  padding: 20px;          /* Gives text some breathing room from edges */
+  box-sizing: border-box; /* Prevents padding from breaking the 100% height */
+  text-decoration: none;
+  color: #F2E8CF;
+}
+
+
+/* Make the 7th card span all 3 columns in your grid */
+.wide-card {
+  grid-column: 1 / -1; 
+  width: 100% !important; /* Overrides the fixed 375px width so it can stretch */
+}
+
+.wide-card:hover .flip-card-inner {
+  transform: rotateX(180deg);
+}
+
+.wide-card .flip-card-back {
+  transform: rotateX(180deg);
+}
+
 
 
 /* Website Body*/
 
 body {
-  margin: 10px 0 0 0;
-  padding: 0;
+  margin: 10px 0 30px 0;
+  padding: 80px 0 30px 0;
   padding-top: 30px;
   background-color: #F2E8CF;
   color: #386641;
@@ -135,7 +263,7 @@ h4 {
 p {
   font-size: 25px;
   margin: 0 auto;
-  max-width: 1600px;
+  max-width: 1200px;
 
 }
 
@@ -157,6 +285,7 @@ ul {
   top: 0;
   width: 100%;
   font-size: 20px;
+  z-index: 1000;
 }
 
 ul li {

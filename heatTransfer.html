@@ -39,8 +39,8 @@
     </div>
     </a>
 
-    <a href="https://drive.google.com/drive/folders/1LTx86iQEOYPl7Qsg-qHDq26CfxwoIW8D?usp=sharing" target="_blank" class="role-card">
-    <div class="role-info">
+    <a href="https://drive.google.com/drive/folders/1LTx86iQEOYPl7Qsg-qHDq26CfxwoIW8D?usp=sharing" target="_blank" class="project-card">
+    <div class="project-info">
       <h3>Report & MATLAB Code</h3>
     </div>
     </a>
@@ -52,10 +52,29 @@
 <h4>Final Project Overview</h4>
 <p>The final project for this course entailed running numerical and analytical simulations to calculate the cooking time required for a hot dog on a grill to reach a given internal temperature. For the extra credit, my group tested the theoretical results on an actual hot dog. We found that the calculations were right on.</p>
 
+<div class="gallery">
+
+<div class="gallery-item">
+  <a target="_blank">
+    <img src="images/hotdog_1.png" alt="Temperature Vs. Time" style = "height: 100%">
+  </a>
+</div>
+
+<div class="gallery-item">
+  <a target="_blank">
+    <img src="images/hotdog_2.png" alt="Temperature Vs. Position" style = "height: 100%">
+  </a>
+</div>
+
+</div>
+
+<p>The goal of this project was to predict the time it takes for a hot dog to reach an internal temperature of 68 C without burning the surface (exceeding a temperature of 100 C) through radiative and convective heat transfer of a charcoal-burning grill. The overall approach modeled the hot dog as an infinite cylinder and the charcoal as an infinite plate. Two approaches are taken when solving for the overall time it takes to cook and the temperatures over radial position at a few time intervals. The first is an analytical approach that confirms that lumped capacitance may
+not be used as the Biot number is greater than 0.1. To solve analytically we account for spatial effects but use a one-coefficient approximation. Additionally, we use a 15-coefficient approximation. The second approach is a finite differencing method that takes in the temperatures at the surrounding nodes in order to calculate the temperature of a specific node at the next time step. This method is broken into the centerline temperature, the surface temperature, and all the nodes in between. MATLAB is used to iterate quickly over these solutions and make the solving process more efficient.</p>
+
 <h4>Final Project Video</h4>
 
 <h4>
-<iframe width="420" height="315"
+<iframe width="600" height = "400"
 src="https://www.youtube.com/embed/6OXSjfl5GwU">
 </iframe>
 </h4>
